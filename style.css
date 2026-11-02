@@ -427,3 +427,24 @@ a.info-row:hover { transform: translateX(4px); border-color: rgba(201, 152, 48, 
   .lb-next { right: calc(50% - 60px); }
   .wa-float { width: 54px; height: 54px; right: 16px; bottom: 16px; }
 }
+
+/* ---------- Gmail / email buttons ---------- */
+.btn-mail { background: #EA4335; color: var(--white); box-shadow: 0 8px 22px rgba(234, 67, 53, .3); }
+.btn-mail:hover { background: #c5362a; transform: translateY(-2px); }
+.btn-light { border-color: rgba(255, 255, 255, .6); color: var(--white); }
+.btn-light:hover { background: var(--white); color: var(--navy); transform: translateY(-2px); }
+.cta-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.mail-float {
+  position: fixed; right: 22px; bottom: 96px; z-index: 200; width: 60px; height: 60px; border-radius: 50%;
+  background: #EA4335; color: var(--white); display: grid; place-items: center;
+  box-shadow: 0 10px 25px rgba(234, 67, 53, .4); transition: transform .25s ease;
+}
+.mail-float:hover { transform: scale(1.08); }
+.mail-float svg { width: 28px; height: 28px; }
+@media (max-width: 560px) {
+  .mail-float { width: 54px; height: 54px; right: 16px; bottom: 82px; }
+  .mail-float svg { width: 25px; height: 25px; }
+  .cta-actions { width: 100%; }
+  .cta-actions .btn { width: 100%; }
+  .hero-actions .btn-mail { width: 100%; }
+}
