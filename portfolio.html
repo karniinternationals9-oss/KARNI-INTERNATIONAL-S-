@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--
+  ================================================================
+  HOW TO ADD A PORTFOLIO ITEM
+  ================================================================
+  1. Put your image in the folder:  images/portfolio/
+     Example: images/portfolio/logo-sharma-sweets.jpg
+     (Tip: use JPG or WEBP, about 1200px wide, under 300 KB.)
+
+  2. Find the gallery below (look for id="portfolioGrid") and copy
+     this block. Set data-category to ONE of:
+       ai-images | pre-wedding | logos | websites | catalogs
+
+       <figure class="pf-item" data-category="logos">
+         <img src="images/portfolio/logo-sharma-sweets.jpg"
+              alt="Logo design for Sharma Sweets" loading="lazy">
+         <figcaption><strong>Logos</strong><span>Sharma Sweets</span></figcaption>
+       </figure>
+
+  3. Delete one of the "Sample coming soon" placeholder blocks
+     (the <figure> that contains <div class="pf-placeholder">).
+
+  The filter buttons and the click-to-enlarge lightbox work
+  automatically for every item. Nothing else needs to change.
+  ================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Our Work | RDB NexGlobal, AI Digital Studio Nokha, Bikaner</title>
+  <meta name="description" content="See the work of RDB NexGlobal, AI digital marketing studio in Nokha, Bikaner, Rajasthan: AI images, pre-wedding shoots, logos, websites and catalogs.">
+  <meta name="keywords" content="AI digital marketing studio Nokha Bikaner Rajasthan, AI digital marketing Nokha, digital marketing Bikaner, RDB NexGlobal, portfolio, AI images Bikaner">
+  <meta name="author" content="RDB NexGlobal OPC Pvt Ltd">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#14213D">
+  <meta name="geo.region" content="IN-RJ">
+  <meta name="geo.placename" content="Nokha, Bikaner, Rajasthan">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="RDB NexGlobal">
+  <meta property="og:title" content="Portfolio | Our Work | RDB NexGlobal, AI Digital Studio Nokha, Bikaner">
+  <meta property="og:description" content="See the work of RDB NexGlobal, AI digital marketing studio in Nokha, Bikaner, Rajasthan: AI images, pre-wedding shoots, logos, websites and catalogs.">
+  <meta property="og:image" content="logo_transparent.png">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Portfolio | Our Work | RDB NexGlobal, AI Digital Studio Nokha, Bikaner">
+  <meta name="twitter:description" content="See the work of RDB NexGlobal, AI digital marketing studio in Nokha, Bikaner, Rajasthan: AI images, pre-wedding shoots, logos, websites and catalogs.">
+  <link rel="icon" type="image/png" href="logo_transparent.png" id="favicon">
+  <link rel="apple-touch-icon" href="logo_transparent.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="RDB NexGlobal home">
+        <img src="logo_transparent.png" alt="RDB NexGlobal logo" class="logo" data-fallback="assets/brand/rdb-nexglobal-logo.jpg">
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="navMenu" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html" class="active" aria-current="page">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://wa.me/918504093551?text=HI" target="_blank" rel="noopener" class="btn btn-gold btn-sm nav-cta">WhatsApp Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">Portfolio</span></nav>
+        <p class="eyebrow">Portfolio</p>
+        <h1>Our Work</h1>
+        <p class="page-hero-sub">A look at what we create. New samples are being added soon.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters reveal" role="group" aria-label="Filter portfolio">
+          <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-btn" data-filter="ai-images" aria-pressed="false">AI Images</button>
+          <button type="button" class="filter-btn" data-filter="pre-wedding" aria-pressed="false">Pre-Wedding</button>
+          <button type="button" class="filter-btn" data-filter="logos" aria-pressed="false">Logos</button>
+          <button type="button" class="filter-btn" data-filter="websites" aria-pressed="false">Websites</button>
+          <button type="button" class="filter-btn" data-filter="catalogs" aria-pressed="false">Catalogs</button>
+        </div>
+        <div class="portfolio-grid" id="portfolioGrid">
+          <figure class="pf-item" data-category="ai-images">
+            <div class="pf-placeholder"><span>Sample coming soon</span></div>
+            <figcaption><strong>AI Images</strong><span>Sample 1</span></figcaption>
+          </figure>
+          <figure class="pf-item" data-category="ai-images">
+            <div class="pf-placeholder"><span>Sample coming soon</span></div>
+            <figcaption><strong>AI Images</strong><span>Sample 2</span></figcaption>
+          </figure>
+          <figure class="pf-item" data-category="pre-wedding">
+            <div class="pf-placeholder"><span>Sample coming soon</span></div>
+            <figcaption><strong>Pre-Wedding</strong><span>Sample 1</span></figcaption>
+          </figure>
+          <figure class="pf-item" data-category="pre-wedding">
+            <div class="pf-placeholder"><span>Sample coming soon</span></div>
+            <figcaption><strong>Pre-Wedding</strong><span>Sample 2</span></figcaption>
+          </figure>
+          <figure class="pf-item" data-category="logos">
+            <div class="pf-placeholder"><span>Sample coming soon</span></div>
+            <figcaption><strong>Logos</strong><span>Sample 1</span></figcaption>
+          </figure>
+          <figure class="pf-item" data-category="logos">
+            <div class="pf-placeholder"><span>Sample coming soon</span></div>
+            <figcaption><strong>Logos</strong><span>Sample 2</span></figcaption>
+          </figure>
+          <figure class="pf-item" data-category="websites">
+            <div class="pf-placeholder"><span>Sample coming soon</span></div>
+            <figcaption><strong>Websites</strong><span>Sample 1</span></figcaption>
+          </figure>
+          <figure class="pf-item" data-category="websites">
+            <div class="pf-placeholder"><span>Sample coming soon</span></div>
+            <figcaption><strong>Websites</strong><span>Sample 2</span></figcaption>
+          </figure>
+          <figure class="pf-item" data-category="catalogs">
+            <div class="pf-placeholder"><span>Sample coming soon</span></div>
+            <figcaption><strong>Catalogs</strong><span>Sample 1</span></figcaption>
+          </figure>
+          <figure class="pf-item" data-category="catalogs">
+            <div class="pf-placeholder"><span>Sample coming soon</span></div>
+            <figcaption><strong>Catalogs</strong><span>Sample 2</span></figcaption>
+          </figure>
+        </div>
+        <p class="pf-empty" id="pfEmpty" hidden>No items in this category yet.</p>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Portfolio preview" hidden>
+      <button type="button" class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+      <button type="button" class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+      <figure class="lb-content">
+        <div class="lb-media" id="lbMedia"></div>
+        <figcaption id="lbCaption"></figcaption>
+      </figure>
+      <button type="button" class="lb-nav lb-next" id="lbNext" aria-label="Next">&#8250;</button>
+    </div>
+
+    <section class="cta-band">
+      <div class="container cta-inner reveal">
+        <div>
+          <h2>Want your work to be featured here?</h2>
+          <p>Let us create something original for your brand.</p>
+        </div>
+        <a href="https://wa.me/918504093551?text=HI" target="_blank" rel="noopener" class="btn btn-gold"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg> WhatsApp Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo" aria-label="RDB NexGlobal home"><img src="logo_transparent.png" alt="RDB NexGlobal logo" data-fallback="assets/brand/rdb-nexglobal-logo.jpg"></a>
+        <p class="footer-tag">Diversified Businesses. One Vision.</p>
+        <p>An AI-powered digital studio from Nokha, Bikaner, Rajasthan.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-list">
+          <li><a href="tel:+918504093551">+91 85040 93551</a></li>
+          <li><a href="mailto:nexglobalrdb@gmail.com">nexglobalrdb@gmail.com</a></li>
+          <li>PWD Street, Sujangarh Road, Nokha, Bikaner, Rajasthan 334803</li>
+          <li>Mon – Sat: 11 AM – 7 PM</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="social">
+          <a href="https://www.youtube.com/@RDBNEXGLOBAL" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15V9l5.8 3z"/></svg></a>
+          <a href="https://wa.me/918504093551?text=HI" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">
+      <p>&copy; <span class="year">2026</span> RDB NexGlobal OPC Pvt Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/918504093551?text=HI" class="wa-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></a>
+
+  <script src="script.js"></script>
+</body>
+</html>
