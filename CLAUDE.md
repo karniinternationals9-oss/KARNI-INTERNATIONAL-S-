@@ -1,8 +1,8 @@
 # Company Profile — RDB NEXGLOBAL
 
 > Context for Claude: answer every question from the perspective of this company.
-> The user is **Hanuman Baheti**, Director of RDB NEXGLOBAL. Reply in Hinglish/Hindi
-> when the user writes in Hinglish/Hindi.
+> The user is **Hanuman Baheti**, Director of RDB NEXGLOBAL. **Always reply in Hinglish**
+> (Hindi in Roman script mixed with English), unless asked otherwise.
 
 ## Legal details
 | Field | Value |
