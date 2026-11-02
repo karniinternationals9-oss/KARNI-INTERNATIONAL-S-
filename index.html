@@ -61,6 +61,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="header" id="header">
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
     <div class="container nav">
       <a href="index.html" class="brand" aria-label="RDB NexGlobal home">
         <img src="logo_transparent.png" alt="RDB NexGlobal logo" class="logo" data-fallback="assets/brand/rdb-nexglobal-logo.jpg">
@@ -81,123 +82,152 @@
 
   <main id="main">
     <section class="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="container hero-inner">
-        <p class="eyebrow">Diversified Businesses. One Vision.</p>
-        <h1>AI-Powered <span class="gold">Digital Studio</span></h1>
-        <p class="hero-sub">Your business, our responsibility.</p>
-        <p class="hero-text">From studio-quality creatives to complete websites, we blend artificial intelligence with real creativity to give your brand a premium presence.</p>
-        <div class="hero-actions">
-          <a href="https://wa.me/918504093551?text=HI" target="_blank" rel="noopener" class="btn btn-gold"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg> WhatsApp Us</a>
-          <a href="mailto:nexglobalrdb@gmail.com?subject=Enquiry%20from%20website" class="btn btn-mail"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5z"/></svg> Email Us</a>
-          <a href="services.html" class="btn btn-outline">Explore Services</a>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-badge"><span class="dot" aria-hidden="true"></span>AI Digital Studio &middot; Nokha, Bikaner</p>
+          <h1>AI-Powered <span class="gold">Digital Studio</span></h1>
+          <p class="hero-sub">Your business, our responsibility.</p>
+          <p class="hero-text">From studio-quality creatives to complete websites, we blend artificial intelligence with real creativity to give your brand a premium presence.</p>
+          <div class="hero-actions">
+            <a href="https://wa.me/918504093551?text=HI" target="_blank" rel="noopener" class="btn btn-gold"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg> WhatsApp Us</a>
+            <a href="mailto:nexglobalrdb@gmail.com?subject=Enquiry%20from%20website" class="btn btn-mail"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5z"/></svg> Email Us</a>
+            <a href="services.html" class="btn btn-light">Explore Services</a>
+          </div>
+          <ul class="hero-points">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4 10-10"/></svg>100% Original Work</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4 10-10"/></svg>AI + Human Creativity</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4 10-10"/></svg>Support After Delivery</li>
+          </ul>
+        </div>
+        <nav class="honeycomb" aria-label="Our services">
+          <div class="hc-row"><a class="hex" href="services.html#ai-images"><span class="hex-in"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 15-5-5-9 9"/></svg><span>AI Images &amp; Videos</span></span></a><a class="hex" href="services.html#pre-wedding"><span class="hex-in"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span>AI Pre-Wedding</span></span></a></div>
+          <div class="hc-row"><a class="hex" href="services.html#logo-design"><span class="hex-in"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.5v-9z"/><path d="M12 12 4 7.5M12 12l8-4.5M12 12v9"/></svg><span>Logo Design</span></span></a><a class="hex hex-gold" href="services.html#website-creation"><span class="hex-in"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3M2 8h20"/></svg><span>Websites</span></span></a><a class="hex" href="services.html#music-jingles"><span class="hex-in"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg><span>Music &amp; Jingles</span></span></a></div>
+          <div class="hc-row"><a class="hex" href="services.html#google-mapping"><span class="hex-in"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Google Mapping</span></span></a><a class="hex" href="services.html#catalog-brochures"><span class="hex-in"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4z"/><path d="M20 4h-4a3 3 0 0 0-3 3"/><path d="M20 4v14h-6"/></svg><span>Catalogs</span></span></a></div>
+        </nav>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track"><span>AI Images &amp; Videos</span><i>&#10022;</i><span>AI Pre-Wedding Shoot</span><i>&#10022;</i><span>Logo Design</span><i>&#10022;</i><span>Music &amp; Jingles</span><i>&#10022;</i><span>Google Mapping</span><i>&#10022;</i><span>Website Creation</span><i>&#10022;</i><span>Catalog &amp; Brochures</span><i>&#10022;</i><span>AI Images &amp; Videos</span><i>&#10022;</i><span>AI Pre-Wedding Shoot</span><i>&#10022;</i><span>Logo Design</span><i>&#10022;</i><span>Music &amp; Jingles</span><i>&#10022;</i><span>Google Mapping</span><i>&#10022;</i><span>Website Creation</span><i>&#10022;</i><span>Catalog &amp; Brochures</span><i>&#10022;</i></div>
+    </div>
+
+    <section class="section">
+      <div class="container split-intro">
+        <div class="reveal">
+          <p class="eyebrow">Welcome to RDB NexGlobal</p>
+          <h2>Your complete digital partner, from Nokha to everywhere.</h2>
+        </div>
+        <div class="reveal">
+        <p>RDB NexGlobal OPC Pvt Ltd is an AI-powered digital company based in Nokha, Bikaner, Rajasthan. We help shops, brands, professionals and families build a strong, premium digital identity, from photos, videos and logos to music, websites and Google Maps visibility. Every project gets the same promise: original work, careful attention to detail and support even after delivery.</p>
+        <a href="about.html" class="btn btn-outline">Know More About Us</a>
         </div>
       </div>
     </section>
 
     <section class="section section-alt">
-      <div class="container intro reveal">
-        <p class="eyebrow">Welcome to RDB NexGlobal</p>
-        <h2>Your complete digital partner, from Nokha to everywhere</h2>
-        <p>RDB NexGlobal OPC Pvt Ltd is an AI-powered digital company based in Nokha, Bikaner, Rajasthan. We help shops, brands, professionals and families build a strong, premium digital identity, from photos, videos and logos to music, websites and Google Maps visibility. Every project gets the same promise: original work, careful attention to detail and support even after delivery.</p>
-        <a href="about.html" class="btn btn-outline">About Us</a>
-      </div>
-    </section>
-
-    <section class="section">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">What We Do</p>
+          <p class="eyebrow"><span class="eb-num">01</span>What We Do</p>
           <h2>Our Services</h2>
           <p>Everything your brand needs to look its best, crafted with care in one studio.</p>
         </div>
         <div class="grid services-grid">
           <a class="card reveal" href="services.html#ai-images">
+            <span class="card-num" aria-hidden="true">01</span>
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 15-5-5-9 9"/></svg></div>
             <h3>AI Images &amp; Videos</h3>
             <p>Studio-quality product photos, ads, reels and festival creatives.</p>
-            <span class="card-link">Learn more <span aria-hidden="true">&rarr;</span></span>
+            <span class="card-link">Learn more <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </a>
           <a class="card reveal" href="services.html#pre-wedding">
+            <span class="card-num" aria-hidden="true">02</span>
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></div>
             <h3>AI Pre-Wedding Shoot</h3>
             <p>Romantic photos and cinematic video in your dream location.</p>
-            <span class="card-link">Learn more <span aria-hidden="true">&rarr;</span></span>
+            <span class="card-link">Learn more <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </a>
           <a class="card reveal" href="services.html#logo-design">
+            <span class="card-num" aria-hidden="true">03</span>
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.5v-9z"/><path d="M12 12 4 7.5M12 12l8-4.5M12 12v9"/></svg></div>
             <h3>Logo Design</h3>
             <p>100% original logo with multiple concepts and all formats.</p>
-            <span class="card-link">Learn more <span aria-hidden="true">&rarr;</span></span>
+            <span class="card-link">Learn more <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </a>
           <a class="card reveal" href="services.html#music-jingles">
+            <span class="card-num" aria-hidden="true">04</span>
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
             <h3>Music &amp; Jingles</h3>
             <p>Original ad jingles and background music, copyright-safe.</p>
-            <span class="card-link">Learn more <span aria-hidden="true">&rarr;</span></span>
+            <span class="card-link">Learn more <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </a>
           <a class="card reveal" href="services.html#google-mapping">
+            <span class="card-num" aria-hidden="true">05</span>
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
             <h3>Google Mapping</h3>
             <p>Complete Google Maps listing so nearby customers find you.</p>
-            <span class="card-link">Learn more <span aria-hidden="true">&rarr;</span></span>
+            <span class="card-link">Learn more <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </a>
           <a class="card reveal" href="services.html#website-creation">
+            <span class="card-num" aria-hidden="true">06</span>
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3M2 8h20"/></svg></div>
             <h3>Website Creation</h3>
             <p>Premium, mobile-friendly websites with WhatsApp button.</p>
-            <span class="card-link">Learn more <span aria-hidden="true">&rarr;</span></span>
+            <span class="card-link">Learn more <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </a>
           <a class="card reveal" href="services.html#catalog-brochures">
+            <span class="card-num" aria-hidden="true">07</span>
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4z"/><path d="M20 4h-4a3 3 0 0 0-3 3"/><path d="M20 4v14h-6"/></svg></div>
             <h3>Catalog &amp; Brochures</h3>
             <p>Product catalogs and company brochures for print and PDF.</p>
-            <span class="card-link">Learn more <span aria-hidden="true">&rarr;</span></span>
+            <span class="card-link">Learn more <span class="arrow" aria-hidden="true">&rarr;</span></span>
           </a>
         </div>
         <div class="center-cta reveal"><a href="services.html" class="btn btn-gold">View All Services</a></div>
       </div>
     </section>
 
-    <section class="section section-alt">
+    <section class="section">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">How We Work</p>
+          <p class="eyebrow"><span class="eb-num">02</span>How We Work</p>
           <h2>Our Process</h2>
           <p>A simple, transparent journey from your idea to the finished result.</p>
         </div>
-        <ol class="process">
-          <li class="step reveal"><span class="step-num">01</span><h3>Understand</h3><p>We listen to your goals, audience and brand style.</p></li>
-          <li class="step reveal"><span class="step-num">02</span><h3>Create</h3><p>AI tools and creative minds build your first concepts.</p></li>
-          <li class="step reveal"><span class="step-num">03</span><h3>Perfect</h3><p>We refine every detail with your feedback.</p></li>
-          <li class="step reveal"><span class="step-num">04</span><h3>Deliver</h3><p>You receive ready-to-use, high-quality final files.</p></li>
+        <ol class="process timeline">
+          <li class="step reveal"><span class="node node-1" aria-hidden="true"></span><span class="step-num">Step 01</span><h3>Understand</h3><p>We listen to your goals, audience and brand style.</p></li>
+          <li class="step reveal"><span class="node node-2" aria-hidden="true"></span><span class="step-num">Step 02</span><h3>Create</h3><p>AI tools and creative minds build your first concepts.</p></li>
+          <li class="step reveal"><span class="node node-3" aria-hidden="true"></span><span class="step-num">Step 03</span><h3>Perfect</h3><p>We refine every detail with your feedback.</p></li>
+          <li class="step reveal"><span class="node node-4" aria-hidden="true"></span><span class="step-num">Step 04</span><h3>Deliver</h3><p>You receive ready-to-use, high-quality final files.</p></li>
         </ol>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section-alt">
       <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Why RDB NexGlobal</p>
-          <h2>Why Choose Us</h2>
-        </div>
-        <div class="grid why-grid">
-          <div class="why reveal">
+        <div class="bento">
+          <div class="bento-lead reveal">
+            <p class="eyebrow"><span class="eb-num">03</span>Why RDB NexGlobal</p>
+            <h2>Why Choose Us</h2>
+            <p>One trusted partner for everything digital, where technology meets taste and quality comes first.</p>
+            <a href="contact.html" class="btn btn-gold">Talk to Us</a>
+          </div>
+          <div class="why bento-tile reveal">
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
             <h3>All Services in One Place</h3>
             <p>Creatives, branding, web and local visibility under one roof.</p>
           </div>
-          <div class="why reveal">
+          <div class="why bento-tile reveal">
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div>
             <h3>AI + Creativity</h3>
             <p>The speed of AI combined with a designer's eye for detail.</p>
           </div>
-          <div class="why reveal">
+          <div class="why bento-tile reveal">
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
             <h3>100% Original Work</h3>
             <p>Every design is made fresh for you, never copied or reused.</p>
           </div>
-          <div class="why reveal">
+          <div class="why bento-tile reveal">
             <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2" y="14" width="5" height="6" rx="1.5"/><rect x="17" y="14" width="5" height="6" rx="1.5"/></svg></div>
             <h3>Support After Delivery</h3>
             <p>We stay with you for changes and guidance after handover.</p>
@@ -221,6 +251,10 @@
   </main>
 
   <footer class="footer">
+    <div class="container footer-top">
+      <p class="footer-big">Diversified Businesses.<br><span>One Vision.</span></p>
+      <a href="https://wa.me/918504093551?text=HI" target="_blank" rel="noopener" class="btn btn-gold"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg> Start a Project</a>
+    </div>
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="footer-logo" aria-label="RDB NexGlobal home"><img src="logo_transparent.png" alt="RDB NexGlobal logo" data-fallback="assets/brand/rdb-nexglobal-logo.jpg"></a>

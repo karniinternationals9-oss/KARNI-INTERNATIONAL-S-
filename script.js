@@ -44,7 +44,14 @@
 
   // ---------- Header shadow ----------
   var header = document.getElementById('header');
-  function onScroll() { if (header) header.classList.toggle('scrolled', window.scrollY > 10); }
+  var progress = document.getElementById('scrollProgress');
+  function onScroll() {
+    if (header) header.classList.toggle('scrolled', window.scrollY > 10);
+    if (progress) {
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      progress.style.transform = 'scaleX(' + (max > 0 ? Math.min(window.scrollY / max, 1) : 0) + ')';
+    }
+  }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
