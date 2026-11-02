@@ -1,0 +1,13 @@
+{
+  "name": "karni-internationals-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Karni International's – chai patti e-commerce website (static HTML + Netlify Functions + Razorpay)",
+  "scripts": {
+    "dev": "netlify dev",
+    "test": "node tests/run-tests.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

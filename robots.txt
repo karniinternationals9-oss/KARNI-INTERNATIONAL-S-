@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /cart.html
+Disallow: /checkout.html
+Disallow: /success.html
+
+# Replace the domain below with your real website address
+Sitemap: https://your-site-name.netlify.app/sitemap.xml

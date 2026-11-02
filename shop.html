@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop Chai Patti Online – CTC, Masala, Elaichi Tea | Karni International's</title>
+  <meta name="description" content="Shop premium tea online in India. Browse Karni chai patti – CTC, masala, elaichi, dust tea, leaf tea and family packs in 250 g, 500 g and 1 kg. Filter by category and pack size.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#4A2C1D">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Karni International's">
+  <meta property="og:title" content="Shop Chai Patti Online – CTC, Masala, Elaichi Tea | Karni International's">
+  <meta property="og:description" content="Shop premium tea online in India. Browse Karni chai patti – CTC, masala, elaichi, dust tea, leaf tea and family packs in 250 g, 500 g and 1 kg. Filter by category and pack size.">
+  <meta property="og:image" content="/assets/og-image.png">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <span>Shop</span></nav>
+      <h1>Shop Chai Patti</h1>
+      <p>Premium tea online – choose your blend and pack size.</p>
+    </div>
+  </section>
+    <section class="section" style="padding-top:36px">
+      <div class="container">
+        <form class="shop-toolbar" id="shop-filters" onsubmit="return false">
+          <div class="field">
+            <label for="f-category">Category</label>
+            <select id="f-category" name="category"><option value="">All categories</option></select>
+          </div>
+          <div class="field">
+            <label for="f-size">Pack size</label>
+            <select id="f-size" name="size"><option value="">All sizes</option></select>
+          </div>
+          <div class="field">
+            <label for="f-sort">Sort by</label>
+            <select id="f-sort" name="sort">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="name-asc">Name: A to Z</option>
+              <option value="name-desc">Name: Z to A</option>
+            </select>
+          </div>
+          <p class="shop-count" id="shop-count" aria-live="polite"></p>
+        </form>
+        <div class="product-grid" id="shop-grid">
+          <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <noscript><p style="text-align:center;padding:16px">Please enable JavaScript to shop on this website.</p></noscript>
+  <script src="/js/common.js" defer></script>
+  <script src="/js/shop.js" defer></script>
+</body>
+</html>

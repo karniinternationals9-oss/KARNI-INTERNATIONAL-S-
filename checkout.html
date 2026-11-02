@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Secure Checkout | Karni International's</title>
+  <meta name="description" content="Enter your delivery details and pay securely with Razorpay – UPI, cards, net banking and wallets.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#4A2C1D">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Karni International's">
+  <meta property="og:title" content="Secure Checkout | Karni International's">
+  <meta property="og:description" content="Enter your delivery details and pay securely with Razorpay – UPI, cards, net banking and wallets.">
+  <meta property="og:image" content="/assets/og-image.png">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <span>Checkout</span></nav>
+      <h1>Checkout</h1>
+      <p>Almost there! Enter your delivery details and pay securely.</p>
+    </div>
+  </section>
+    <section class="section" style="padding-top:36px">
+      <div class="container">
+        <div id="checkout-alert" role="alert" aria-live="assertive"></div>
+        <div class="checkout-layout" id="checkout-layout">
+          <form class="card" id="checkout-form" novalidate>
+            <h2>Delivery details</h2>
+            <div class="form-grid">
+              <div class="field span-2">
+                <label for="c-name">Full name <span class="req" aria-hidden="true">*</span></label>
+                <input id="c-name" name="name" type="text" autocomplete="name" maxlength="80" required>
+                <span class="field-error" id="c-name-err"></span>
+              </div>
+              <div class="field">
+                <label for="c-mobile">Mobile number <span class="req" aria-hidden="true">*</span></label>
+                <div class="input-prefix"><span>+91</span><input id="c-mobile" name="mobile" type="tel" inputmode="numeric" autocomplete="tel-national" pattern="[6-9][0-9]{9}" required aria-describedby="c-mobile-err"></div>
+                <span class="field-error" id="c-mobile-err"></span>
+              </div>
+              <div class="field">
+                <label for="c-email">Email <span class="req" aria-hidden="true">*</span></label>
+                <input id="c-email" name="email" type="email" autocomplete="email" maxlength="100" required aria-describedby="c-email-err">
+                <span class="field-error" id="c-email-err"></span>
+              </div>
+              <div class="field span-2">
+                <label for="c-address1">Address line 1 <span class="req" aria-hidden="true">*</span></label>
+                <input id="c-address1" name="address1" type="text" autocomplete="address-line1" maxlength="150" placeholder="House no., building, street" required aria-describedby="c-address1-err">
+                <span class="field-error" id="c-address1-err"></span>
+              </div>
+              <div class="field span-2">
+                <label for="c-address2">Address line 2 <span class="muted">(optional)</span></label>
+                <input id="c-address2" name="address2" type="text" autocomplete="address-line2" maxlength="150" placeholder="Area, landmark">
+              </div>
+              <div class="field">
+                <label for="c-city">City <span class="req" aria-hidden="true">*</span></label>
+                <input id="c-city" name="city" type="text" autocomplete="address-level2" maxlength="60" required aria-describedby="c-city-err">
+                <span class="field-error" id="c-city-err"></span>
+              </div>
+              <div class="field">
+                <label for="c-state">State <span class="req" aria-hidden="true">*</span></label>
+                <select id="c-state" name="state" autocomplete="address-level1" required aria-describedby="c-state-err"><option value="">Select state</option></select>
+                <span class="field-error" id="c-state-err"></span>
+              </div>
+              <div class="field">
+                <label for="c-pincode">Pincode <span class="req" aria-hidden="true">*</span></label>
+                <input id="c-pincode" name="pincode" type="text" inputmode="numeric" autocomplete="postal-code" pattern="[1-9][0-9]{5}" required aria-describedby="c-pincode-err">
+                <span class="field-error" id="c-pincode-err"></span>
+              </div>
+            </div>
+            <p class="field-hint">By placing the order you agree to our <a href="/terms.html">Terms</a>, <a href="/refund-policy.html">Refund</a> and <a href="/shipping-policy.html">Shipping</a> policies.</p>
+          </form>
+          <aside class="summary" aria-labelledby="summary-title">
+            <h2 id="summary-title">Order summary</h2>
+            <div id="checkout-summary"><div class="skeleton" style="min-height:160px"></div></div>
+            <button class="btn btn--primary btn--block" id="pay-btn" type="submit" form="checkout-form" disabled>Pay Now</button>
+            <p class="secure-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> 100% secure payment via Razorpay</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <noscript><p style="text-align:center;padding:16px">Please enable JavaScript to shop on this website.</p></noscript>
+  <script src="/js/common.js" defer></script>
+  <script src="/js/checkout.js" defer></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js" async></script>
+</body>
+</html>

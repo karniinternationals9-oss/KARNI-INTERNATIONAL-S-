@@ -1,0 +1,150 @@
+{
+  "_help": "All products live here. Prices are in rupees (whole numbers) and are SAMPLE values - replace them before launch. 'id' is used in links and in the cart: do not change it once the shop is live. 'key' of a size must be unique inside that product. See README.md.",
+
+  "products": [
+    {
+      "id": "karni-premium-ctc-chai",
+      "name": "Karni Premium CTC Chai",
+      "category": "CTC Tea",
+      "shortDescription": "Bold, granular CTC tea for a full-bodied daily cup.",
+      "description": "Our everyday hero. Premium CTC (crush-tear-curl) granules that brew quickly into a strong, full-bodied chai with a rich colour. Made for kadak doodh-wali chai at home, office or tapri.",
+      "images": [
+        "/images/products/premium-ctc-chai.svg",
+        "/images/products/gallery-cup.svg",
+        "/images/products/gallery-leaves.svg"
+      ],
+      "sizes": [
+        { "key": "250g", "label": "250 g", "price": 130 },
+        { "key": "500g", "label": "500 g", "price": 250 },
+        { "key": "1kg", "label": "1 kg", "price": 480 }
+      ],
+      "brewingTips": [
+        "Use 1 heaped teaspoon per cup.",
+        "Boil water first, add tea and simmer for 1–2 minutes.",
+        "Add milk and sugar, bring to a boil twice for a kadak cup."
+      ],
+      "featured": true,
+      "bestSeller": true
+    },
+    {
+      "id": "karni-masala-chai",
+      "name": "Karni Masala Chai",
+      "category": "Flavoured Tea",
+      "shortDescription": "CTC tea blended with classic Indian chai spices.",
+      "description": "A warm, aromatic blend of our CTC tea with traditional chai masala spices. Brew it the desi way for a spiced cup that tastes like home.",
+      "images": [
+        "/images/products/masala-chai.svg",
+        "/images/products/gallery-cup.svg",
+        "/images/products/gallery-leaves.svg"
+      ],
+      "sizes": [
+        { "key": "250g", "label": "250 g", "price": 150 },
+        { "key": "500g", "label": "500 g", "price": 290 },
+        { "key": "1kg", "label": "1 kg", "price": 560 }
+      ],
+      "brewingTips": [
+        "Use 1 teaspoon per cup – the masala is already blended in.",
+        "Simmer with water for 2 minutes to release the spices.",
+        "Add milk, boil once more and strain."
+      ],
+      "featured": true,
+      "bestSeller": true
+    },
+    {
+      "id": "karni-elaichi-chai",
+      "name": "Karni Elaichi Chai",
+      "category": "Flavoured Tea",
+      "shortDescription": "Strong CTC tea with the sweet aroma of cardamom.",
+      "description": "Our strong CTC base blended with cardamom (elaichi) for a fragrant, soothing cup. Perfect for guests, morning rituals and evening breaks.",
+      "images": [
+        "/images/products/elaichi-chai.svg",
+        "/images/products/gallery-cup.svg",
+        "/images/products/gallery-leaves.svg"
+      ],
+      "sizes": [
+        { "key": "250g", "label": "250 g", "price": 160 },
+        { "key": "500g", "label": "500 g", "price": 310 },
+        { "key": "1kg", "label": "1 kg", "price": 600 }
+      ],
+      "brewingTips": [
+        "Use 1 teaspoon per cup.",
+        "Do not over-boil after adding milk to keep the elaichi aroma fresh.",
+        "Let it rest for 30 seconds before straining."
+      ],
+      "featured": true,
+      "bestSeller": false
+    },
+    {
+      "id": "karni-strong-dust-tea",
+      "name": "Karni Strong Dust Tea",
+      "category": "Dust Tea",
+      "shortDescription": "Fine dust tea for an extra-strong, quick-brewing cup.",
+      "description": "Fine-grade dust tea that releases colour and strength in seconds. Ideal for those who love a very strong, dark chai and for high-volume brewing.",
+      "images": [
+        "/images/products/strong-dust-tea.svg",
+        "/images/products/gallery-cup.svg",
+        "/images/products/gallery-leaves.svg"
+      ],
+      "sizes": [
+        { "key": "250g", "label": "250 g", "price": 110 },
+        { "key": "500g", "label": "500 g", "price": 210 },
+        { "key": "1kg", "label": "1 kg", "price": 400 }
+      ],
+      "brewingTips": [
+        "Use a little less – about ¾ teaspoon per cup.",
+        "Brews fast: 45–60 seconds of boiling is enough.",
+        "Strain through a fine sieve."
+      ],
+      "featured": false,
+      "bestSeller": true
+    },
+    {
+      "id": "karni-gold-leaf-tea",
+      "name": "Karni Gold Leaf Tea",
+      "category": "Leaf Tea",
+      "shortDescription": "Long leaf tea for a bright, aromatic and smooth cup.",
+      "description": "Our premium long-leaf selection for those who enjoy a lighter, aromatic cup. Brew it with or without milk and enjoy its bright golden liquor.",
+      "images": [
+        "/images/products/gold-leaf-tea.svg",
+        "/images/products/gallery-cup.svg",
+        "/images/products/gallery-leaves.svg"
+      ],
+      "sizes": [
+        { "key": "250g", "label": "250 g", "price": 180 },
+        { "key": "500g", "label": "500 g", "price": 350 },
+        { "key": "1kg", "label": "1 kg", "price": 680 }
+      ],
+      "brewingTips": [
+        "Use 1 teaspoon per cup.",
+        "Steep in freshly boiled water for 3–4 minutes for black tea.",
+        "For milk chai, simmer for 3 minutes before adding milk."
+      ],
+      "featured": true,
+      "bestSeller": false
+    },
+    {
+      "id": "karni-family-pack",
+      "name": "Karni Family Pack",
+      "category": "Value Pack",
+      "shortDescription": "Our everyday CTC blend in value sizes for the whole family.",
+      "description": "The same Karni taste in a value pack for big families, offices and shops. Strong, consistent and easy on the pocket.",
+      "images": [
+        "/images/products/family-pack.svg",
+        "/images/products/gallery-cup.svg",
+        "/images/products/gallery-leaves.svg"
+      ],
+      "sizes": [
+        { "key": "250g", "label": "250 g", "price": 120 },
+        { "key": "500g", "label": "500 g", "price": 230 },
+        { "key": "1kg", "label": "1 kg", "price": 440 }
+      ],
+      "brewingTips": [
+        "Use 1 heaped teaspoon per cup.",
+        "Simmer for 2 minutes with water before adding milk.",
+        "Store in an airtight container after opening."
+      ],
+      "featured": false,
+      "bestSeller": true
+    }
+  ]
+}

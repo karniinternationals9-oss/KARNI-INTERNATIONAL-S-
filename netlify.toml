@@ -1,0 +1,33 @@
+# Netlify configuration – Karni International's
+# Plain HTML/CSS/JS site: no build step. Functions live in netlify/functions.
+
+[build]
+  publish = "."
+  functions = "netlify/functions"
+  command = "echo 'No build step'"
+
+[functions]
+  node_bundler = "esbuild"
+  # data files are bundled into the functions so prices are read on the server
+  included_files = ["data/**"]
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Prices and settings must always be fresh
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/success.html"
+  [headers.values]
+    Cache-Control = "no-store"
+
+# Friendly URLs: /shop -> shop.html is handled by Netlify "Pretty URLs" automatically.

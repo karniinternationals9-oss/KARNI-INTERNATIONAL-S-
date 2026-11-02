@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" width="300" height="64" role="img" aria-labelledby="ki-logo-title">
+  <title id="ki-logo-title">Karni International's</title>
+  <!-- Temporary text wordmark. Replace this file with your real logo (keep the same file name), see README. -->
+  <g transform="translate(4 6)">
+    <circle cx="26" cy="26" r="25" fill="#4A2C1D"/>
+    <circle cx="26" cy="26" r="21.5" fill="none" stroke="#C9A24B" stroke-width="1.2"/>
+    <path d="M15 37c0-13 9-22 23-24-1 14-9 23-23 24z" fill="#C9A24B"/>
+    <path d="M16 36c6-6 11-11 19-20" stroke="#4A2C1D" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path d="M22 30l-3-6M27 25l-2-6M25 27l6 1M20 32l6 1" stroke="#4A2C1D" stroke-width="1.1" stroke-linecap="round"/>
+  </g>
+  <text x="66" y="33" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#4A2C1D">Karni <tspan fill="#7A1F2B">International's</tspan></text>
+  <text x="67" y="52" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="10.5" letter-spacing="2.2" fill="#9A7A2E">HAR CHUSKI MEIN ASLI SWAAD</text>
+</svg>
